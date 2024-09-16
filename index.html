@@ -6,42 +6,54 @@
     <title>Ashraf Mohamed - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
             color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background: #fff;
+            background: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 30px;
         }
-        h1, h2 {
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0056b3;
+        }
+        h2 {
             color: #0056b3;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
         }
         .header {
             text-align: center;
             margin-bottom: 20px;
         }
-        .header h1 {
-            margin: 0;
+        .header p {
+            margin: 5px 0;
         }
-        .contact-info {
-            margin-bottom: 20px;
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
         .section {
             margin-bottom: 20px;
         }
-        .section h2 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-        }
         .list-item {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .list-item ul {
             margin: 0;
@@ -52,9 +64,20 @@
         }
         .footer {
             text-align: center;
-            margin-top: 20px;
-            font-size: 0.8em;
+            margin-top: 30px;
+            font-size: 0.9em;
             color: #666;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -63,10 +86,12 @@
         <div class="header">
             <h1>Ashraf Mohamed</h1>
             <p>Android Developer</p>
-            <p>Email: <a href="mailto:ashraf.moham456@gmail.com">ashraf.moham456@gmail.com</a></p>
-            <p>Phone: 01001470783</p>
-            <p>Location: Cairo, EG</p>
-            <p><a href="https://www.linkedin.com/in/ashraf-mohamed-121b27241" target="_blank">LinkedIn</a></p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ashraf.moham456@gmail.com">ashraf.moham456@gmail.com</a></p>
+                <p>Phone: 01001470783</p>
+                <p>Location: Cairo, EG</p>
+                <p><a href="https://www.linkedin.com/in/ashraf-mohamed-121b27241" target="_blank">LinkedIn</a></p>
+            </div>
         </div>
 
         <div class="section">
@@ -90,7 +115,7 @@
             <h2>Projects</h2>
             <div class="list-item">
                 <h3>E-commerce App</h3>
-                <p>Developed a robust e-commerce app with user account functionality, API integration, and essential features like product browsing, Wishlist creation, cart management. The implementation follows a clean architecture and modularization for a scalable and maintainable codebase.</p>
+                <p>Developed a robust e-commerce app with user account functionality, API integration, and essential features like product browsing, Wishlist creation, and cart management. The implementation follows a clean architecture and modularization for a scalable and maintainable codebase.</p>
                 <p><strong>Technologies:</strong> MVI, DI (Koin), Repository Pattern, Kotlin Coroutines, Clean Architecture, Git, RoomDB</p>
             </div>
             <div class="list-item">
@@ -99,7 +124,7 @@
             </div>
             <div class="list-item">
                 <h3>News App</h3>
-                <p>Crafted a user-friendly news app with modern MVVM architecture, API integration. Implemented features include intuitive category and source filtering for a tailored news browsing experience.</p>
+                <p>Crafted a user-friendly news app with modern MVVM architecture and API integration. Implemented features include intuitive category and source filtering for a tailored news browsing experience.</p>
                 <p><strong>Technologies:</strong> MVVM, Retrofit, Dependency Injection using Hilt, Repository Pattern, Kotlin Coroutines, Git</p>
             </div>
             <div class="list-item">
