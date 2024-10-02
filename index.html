@@ -4,163 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashraf Mohamed - Android Developer</title>
-    <style>
-        :root {
-            --primary-color: #1f1f1f;
-            --secondary-color: #2b2b2b;
-            --accent-color: #e63946;
-            --text-color: #f1faee;
-            --link-color: #a8dadc;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        nav {
-            background-color: var(--secondary-color);
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: var(--link-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-
-        header {
-            text-align: center;
-            padding: 4rem 0;
-            background: var(--secondary-color);
-            margin-bottom: 2rem;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        section {
-            padding: 2rem;
-            margin: 1rem 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .contact {
-            background-color: var(--secondary-color);
-            padding: 2rem;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: var(--secondary-color);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--accent-color);
-            color: var(--text-color);
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-
-        .btn:hover {
-            background-color: #d62828;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <h2>Ashraf Mohamed</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header Section -->
-    <header id="home">
-        <h1>Android Developer</h1>
-        <p>Enthusiastic Android developer with hands-on experience in Java and Kotlin.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Experience Section -->
-    <section id="experience" class="container">
-        <h2>Work Experience</h2>
-        <h3>POS Mission: Android Developer (3-2024 – 9-2024)</h3>
-        <ul>
-            <li>Worked on integrating payment solutions with Fawry to enhance transaction capabilities.</li>
-            <li>Built and tested user interfaces (UIs) with Jetpack Compose.</li>
-            <li>Continuously explored and adopted new Android technologies to improve app efficiency.</li>
-        </ul>
-    </section>
+    <main>
+        <section id="hero">
+            <h1>Ashraf Mohamed</h1>
+            <h2>Android Developer</h2>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <h3>E-commerce App</h3>
-        <p>Developed a robust e-commerce app with user account functionality, API integration, and essential features like product browsing, Wishlist creation, cart management.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Passionate Android developer with experience in building modern, efficient mobile applications.</p>
+        </section>
 
-        <h3>Diary App</h3>
-        <p>Created an Android app allowing users to store daily diaries with mood selection, title, description, and photo attachments.</p>
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Work Experience</h3>
+            <div class="experience">
+                <h4>POS mission: Android developer (3-2024 – 9-2024)</h4>
+                <p>Responsible for:</p>
+                <ul>
+                    <li>Worked on integrating payment solutions with Fawry to enhance transaction capabilities.</li>
+                    <li>Built and tested user interfaces (UIs) with Jetpack Compose.</li>
+                    <li>Continuously explored and adopted new Android technologies to improve app efficiency.</li>
+                </ul>
+            </div>
+        </section>
 
-        <h3>News App</h3>
-        <p>Crafted a user-friendly news app with modern MVVM architecture and API integration for a tailored news browsing experience.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>E-commerce App</h3>
+                <p>An e-commerce application built with Jetpack Compose.</p>
+                <a href="https://github.com/Ashraf4567/E-commerce-compose-" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>To-Do App</h3>
+                <p>A task management application.</p>
+                <a href="https://github.com/Ashraf4567/To-Do-App" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>News App</h3>
+                <p>A news aggregation application.</p>
+                <a href="https://github.com/Ashraf4567/News-App" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Chat App</h3>
+                <p>A real-time messaging application.</p>
+                <a href="https://github.com/Ashraf4567/chat-App" target="_blank">View Project</a>
+            </div>
+        </section>
 
-        <h3>Chat App</h3>
-        <p>Developed a chat application enabling users to create chat rooms, fostering interactive communication.</p>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Android Development</li>
+                <li>Kotlin</li>
+                <li>Java</li>
+                <li>Jetpack Compose</li>
+                <li>MVVM Architecture</li>
+                <li>RESTful APIs</li>
+                <li>Git</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:ashraf.moham456@gmail.com" style="color: var(--link-color);">ashraf.moham456@gmail.com</a></p>
-        <p>Phone: <a href="tel:+201001470783" style="color: var(--link-color);">01001470783</a></p>
-        <a href="https://www.linkedin.com/in/ashraf-mohamed-121b27241" class="btn">LinkedIn Profile</a>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ashraf.moham456@gmail.com">ashraf.moham456@gmail.com</a></p>
+            <p>LinkedIn: <a href="http://www.linkedin.com/in/ashraf-mohamed-121b27241" target="_blank">Ashraf Mohamed</a></p>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Ashraf Mohamed. All rights reserved.</p>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>
